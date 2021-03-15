@@ -16,7 +16,7 @@ import "./SushiToken.sol";
 // distributed and the community can show to govern itself.
 //
 // Have fun reading it. Hopefully it's bug-free. God bless.
-contract MasterChefLVN is Ownable {
+contract MasterLevin is Ownable {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
     // Info of each user.
