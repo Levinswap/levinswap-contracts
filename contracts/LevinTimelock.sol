@@ -13,7 +13,7 @@ contract LevinTimelock {
     // admin address to receive levin
     address public adminaddr;
     // last withdraw timestamp
-    uint256 lastWithdrawTimestamp;
+    uint256 public lastWithdrawTimestamp;
     // withdrawal interval
     uint256 public withdrawInterval;
     // amount withdrawn per interval
