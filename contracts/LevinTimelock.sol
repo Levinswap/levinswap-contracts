@@ -20,6 +20,7 @@ contract LevinTimelock {
     uint256 public withdrawAmount;
     
     constructor(LevinToken _levin, address _adminaddr, uint256 withdrawIntervalWeeks, uint256 _withdrawAmount) public {
+        require(address(_levin) != address(0) && _adminaddr != address(0), "invalid address");
         levin = _levin;
         adminaddr = _adminaddr;
         withdrawInterval = withdrawIntervalWeeks * 1 weeks;
